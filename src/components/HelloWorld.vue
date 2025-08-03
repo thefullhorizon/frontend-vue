@@ -1,11 +1,18 @@
 <script setup>
 import { ref } from 'vue'
 
+// 接受父组件传递进来的属性
 defineProps({
   msg: String,
 })
-
+// 定义本租金的数据
 const count = ref(0)
+
+// 定义函数
+function increment() {
+  count.value++
+}
+
 </script>
 
 <template>
