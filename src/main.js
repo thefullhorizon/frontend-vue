@@ -16,7 +16,8 @@ const routes = [
   {
     path: '/home',
     name: 'HomePage',
-    component: HelloWorld
+    component: HelloWorld,
+    props: route => ({ msg: 'whale.ai' }) // 通过 query 传递，默认 Welcome
   },
   {
     path: '/user',
